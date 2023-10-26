@@ -1,4 +1,4 @@
-Next.js 13 App Directory RSC Refresh Token Flow
+# Next.js 13 App Directory RSC Refresh Token Flow
 
 This repository serves as a proof of concept for handling the "traditional SPA" refresh token flow within the new Next.js 13 App Directory's React Server Components. It is also based on my blog post that you can read [here](https://google.com/).
 
