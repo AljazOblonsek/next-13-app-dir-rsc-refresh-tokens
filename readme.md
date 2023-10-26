@@ -1,6 +1,6 @@
 # Next.js 13 App Directory RSC Refresh Token Flow
 
-This repository serves as a proof of concept for handling the "traditional SPA" refresh token flow within the new Next.js 13 App Directory's React Server Components. It is also based on my blog post that you can read [here](https://google.com/).
+This repository serves as a proof of concept for handling the "traditional SPA" refresh token flow within the new Next.js 13 App Directory's React Server Components. It is also based on my blog post that you can read [here](https://portfolio.oblonsek.si/posts/implementing-spa-refresh-token-flow-in-next-13-app-dir).
 
 **Note:** This repository is for demonstration purposes only. It contains sensitive information, unsafe variables, and passwords stored directly in the code for convenience and ease of setup. In real-world applications, you should never do this.
 
@@ -50,6 +50,11 @@ This will run the Next.js app on port 3000.
 ![Home page](./images/1-home-page.png)
 
 2. Navigate to the login page with your browser's developer tools open. After logging in, you should see a new HTTP-only cookie named `session`. This cookie contains information about tokens & the user, and is encrypted. It will also redirect you to the protected page (`protected-rsc`).
+
+**Hint:** If you want to access login information quickly, you can find it in the [`/express-api/main.js`](./express-api/main.js) file. However, if you prefer a shortcut, you can use the following credentials:
+
+- **Email:** bilbo.baggins@middle.earth
+- **Password:** going-on-adventure-123
 
 ![Login page](./images/2-login-page-and-cookies.png)
 ![After first login](./images/3-new-cookie-after-login.png)
